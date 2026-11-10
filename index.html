@@ -1,0 +1,44 @@
+l<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz: História da Inteligência Artificial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🤖 Quiz: História da IA</h1>
+      <p class="subtitulo">Teste seus conhecimentos sobre nomes e anos que marcaram a Inteligência Artificial.</p>
+    </header>
+
+    <section id="tela-inicio" class="tela ativa">
+      <p>Serão <strong>8 perguntas</strong> sobre marcos da IA. Boa sorte!</p>
+      <button id="btn-iniciar">Iniciar Quiz</button>
+    </section>
+
+    <section id="tela-quiz" class="tela">
+      <div class="progresso">
+        <span id="contador-pergunta">Pergunta 1 de 8</span>
+        <div class="barra"><div id="barra-preenchida"></div></div>
+      </div>
+
+      <h2 id="pergunta"></h2>
+      <div id="alternativas" class="alternativas"></div>
+
+      <p id="feedback" class="feedback"></p>
+      <button id="btn-proxima" class="escondido">Próxima ➡</button>
+    </section>
+
+    <section id="tela-resultado" class="tela">
+      <h2>Resultado</h2>
+      <p id="pontuacao"></p>
+      <p id="mensagem-final"></p>
+      <button id="btn-reiniciar">Jogar Novamente</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
